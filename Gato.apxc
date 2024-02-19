@@ -1,0 +1,10 @@
+public class Gato extends Animal{
+	public Gato(String nome, Integer idade) {
+        super(nome, idade);
+    }
+    
+    // Método específico para a classe Gato
+    public void miar() {
+        System.debug('O gato está miando.');
+    }
+}
