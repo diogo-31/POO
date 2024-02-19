@@ -1,0 +1,46 @@
+public abstract class Animal {
+	private String nome;
+    private Integer idade;
+    
+    /*private Double valor = 1.5;
+    private Boolean gen = true;
+    private List<String> filhos = new List<String>{'aa', 'bb'};
+    private Map<String, integer> mapFilhos = new Map<String, integer>{'Diogo' => 22, 'Daniel' => 27};
+    private Object sobre = (Object) mapFilhos;    
+    private Blob video;*/
+    
+    
+    //|a|b|c|d|
+    //|1|2|3|4|
+        
+        
+    public Animal(String nome, Integer idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+    
+    public virtual void emitirSom() {
+        System.debug('O animal está fazendo algum som.');
+    }
+    
+    public void mover() {
+        System.debug('O animal está se movendo.');
+    }
+    
+    // Getters e Setters
+    public String getNome() {
+        return nome;
+    }
+    
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    
+    public Integer getIdade() {
+        return idade; 
+    }
+    
+    public void setIdade(Integer idade) {
+        this.idade = idade;
+    }
+}
